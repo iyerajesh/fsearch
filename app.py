@@ -64,7 +64,7 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 split_documents = text_splitter.split_documents(docs)
 
 # Initialize embeddings
-embeddings = HuggingFaceEmbeddings(model_name="rprav007/snowflake-arctic-embed-m-finetuned-v1")
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 # Initialize Qdrant client
 client = QdrantClient(":memory:")
