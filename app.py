@@ -72,7 +72,7 @@ client = QdrantClient(":memory:")
 # Create collection in Qdrant
 client.create_collection(
     collection_name="obecity_rag",
-    vectors_config=VectorParams(size=768, distance=Distance.COSINE),
+    vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
 )
 
 # Initialize vector store
