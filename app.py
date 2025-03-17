@@ -252,7 +252,7 @@ async def start_chat():
     workflow = uncompiled_graph.compile()
     cl.user_session.set("workflow", workflow)
 
-    greet_message = cl.Message(content="""**Hi There! - Welcome, I am an AI Agent that can help with providing information about Obecity and weight-loss (Check out Readme to know more about me)**
+    greet_message = cl.Message(content="""**Hi There! - Welcome, I am an AI Agent that can help with providing information about Obesity and weight-loss (Check out Readme to know more about me)**
     **Since, Obesity is a big problem in America, Come here to get your facts right and find a healthy lifestyle using my tools!!!!**
     ***So, what do you want to learn today?***""")
     await greet_message.send()
